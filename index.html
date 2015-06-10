@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <title>Textbook Database</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+	<link href="style.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+	<!--Show/Hide script-->
+		<script language="javascript" type="text/javascript">
+		function showHide(shID) {
+		   if (document.getElementById(shID)) {
+			  if (document.getElementById(shID+'-show').style.display != 'none') {
+				 document.getElementById(shID+'-show').style.display = 'none';
+				 document.getElementById(shID).style.display = 'block';
+			  }
+			  else {
+				 document.getElementById(shID+'-show').style.display = 'inline';
+				 document.getElementById(shID).style.display = 'none';
+			  }
+		   }
+		}
+		</script>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+		<div id="header">
+		</div><!--#header -->
+
+        <div class="content">
+
+			<div id="menu">
+				<ul>
+                	<li><a class="link-button link-button-site-name" href="/">Textbook database</a></li>
+					<li><a class="link-button" href="#contact">Contact</a></li>
+				</ul>
+			</div><!--#menu-->
+
+			<div class="video-slide">
+
+				<center>				
+					<a href="/"><img src="images/textbook-database-slide.png" alt="Textbook database slide" /></a>
+				</center>
+
+			</div><!--.video-slide-->
+            
+			<div id="textbook-database">
+
+				<h2>Why an open textbook database?</h2>
+                <p>The textbook-publishing industry is complicated: publishers, university administrators, lecturers, students and parents all work in it, but are largely blind to each other's interests. All we know for sure is that textbooks are very, very expensive.</p>
+				<p>Some of us want to change this. Some want to change the way textbooks are created. Some want to change the way they are distributed. Some want to change the way they are used. To do this, we need numbers. We need to know what textbooks are being used and where. And we have to work together to get this information.</p>
+				<p>This textbook database is meant to do that. It is open – anyone can see it and contribute to it. How will it be useful? Pick a role below to see how different people might use an open textbook database.</p>
+                
+			<div class="role-chooser">
+				<ul>
+                	<li><a href="#" id="role-lecturer-show" class="showLink link-button link-button-light" onclick="showHide('role-lecturer');return false;">Lecturers</a></li>
+                	<li><a href="#" id="role-publisher-show" class="showLink link-button link-button-light" onclick="showHide('role-publisher');return false;">Publishers</a></li>
+                    <li><a href="#" id="role-web-retailer-show" class="showLink link-button link-button-light" onclick="showHide('role-web-retailer');return false;">Online retailers</a></li>
+                    <li><a href="#" id="role-bookseller-show" class="showLink link-button link-button-light" onclick="showHide('role-bookseller');return false;">Booksellers</a></li>
+                    <li><a href="#" id="role-startup-show" class="showLink link-button link-button-light" onclick="showHide('role-startup');return false;">Startups</a></li>
+                    <li><a href="#" id="role-uni-admin-show" class="showLink link-button link-button-light" onclick="showHide('role-uni-admin');return false;">University admins</a></li>
+                    <li><a href="#" id="role-oer-creator-show" class="showLink link-button link-button-light" onclick="showHide('role-oer-creator');return false;">OER creators</a></li>
+                </ul>
+            </div><!--.role-chooser-->
+
+            <div class="role-descriptions">
+            
+                <div id="role-lecturer" class="more">
+                <h4>Lecturers</h4>
+                <p>Ian teaches film and media at UCT. He is choosing texts for the next year. He wants to know how accessible (in price and availability) his current prescribed list is. He'd be curious to know whether there are OERs in his field. He wants to compare his textbooks to a similar course at another university, including comparing purchase rates.</p>
+                <p><a href="#" id="role-lecturer-hide" class="hideLink" onclick="showHide('role-lecturer');return false;">Close</a></p>
+                </div>
+                
+                <div id="role-publisher" class="more">
+                <h4>Publishers</h4>
+                <p>Richard is the Head of Academic Publishing at a big publishing company. He wants to decide what field to publish in and for what year. He uses the database to get a spreadsheet of courses by student numbers, purchase rates and university. For his top picks, he uses the database to find out the titles and authors of the existing textbooks in those fields.</p>
+                <p><a href="#" id="role-publisher-hide" class="hideLink" onclick="showHide('role-publisher');return false;">Close</a></p>
+                </div>
+                
+                <div id="role-web-retailer" class="more">
+                <h4>Online retailers</h4>
+                <p>Kate is the category manager for an online bookstore. She wants to know which books she must stock, how many to stock, and when they must be available for customers to buy. She uses the database to create her own spreadsheet containing title, ISBN, institutions, number of students and semester, and purchase rate. Pricing information helps her project cash flow. Product vendor URL (e.g. publisher website product page) helps her find where to order the book. She passes course codes to her developers to add to her site for customers to search by.</p>
+                <p><a href="#" id="role-web-retailer-hide" class="hideLink" onclick="showHide('role-web-retailer');return false;">Close</a></p>
+                </div>
+                
+                <div id="role-bookseller" class="more">
+                <h4>Booksellers</h4>
+                <p>Pierre manages a brick-and-mortar bookstore. He is curious to know whether it's worth stocking university textbooks in his store. He uses the database to find out which books are most popular at local universities, purchase rates, and how accessible they are already to local students.</p>
+                <p><a href="#" id="role-bookseller-hide" class="hideLink" onclick="showHide('role-bookseller');return false;">Close</a></p>
+                </div>
+                
+                <div id="role-startup" class="more">
+                <h4>Startups</h4>
+                <p>Tamryn's startup provides online training. Universities are her competitors. She needs to know which courses are most popular and lucrative. She uses the database to create a list of top courses by student numbers and book pricing. Knowing what students expect to pay helps her set prices and promote her services. She also wants to know about available OERs that she can adapt into her own course material.</p>
+                <p><a href="#" id="role-startup-hide" class="hideLink" onclick="showHide('role-startup');return false;">Close</a></p>
+                </div>
+                
+                <div id="role-uni-admin" class="more">
+                <h4>University administrators</h4>
+                <p>Salah is a senior admin at a large university. He wants to compare textbook pricing and purchase rates at his university vs others. He wants to see the demographics of the authors, the accessibility index, and red flags for self-interested prescription (authors prescribing their own book), obvious OER candidates, and out-of-date books.</p>
+                <p><a href="#" id="role-uni-admin-hide" class="hideLink" onclick="showHide('role-uni-admin');return false;">Close</a></p>
+                </div>
+                
+                <div id="role-oer-creator" class="more">
+                <h4>OER creators</h4>
+                <p>Mark is a physicist with a grant to create an OER textbook. First, he uses the database to find out which textbooks are already used, so that his textbook can cover the same ground; and what OERs exist that he could use. Once he's written it, he contributes his book's details to the database.</p>
+                <p><a href="#" id="role-oer-creator-hide" class="hideLink" onclick="showHide('role-oer-creator');return false;">Close</a></p>
+                </div>
+
+            </div><!--.role-descriptions-->
+                
+                <a target="_blank" href="https://docs.google.com/a/paperight.com/spreadsheet/pub?key=0Ak78QVAP_CkEdDJVcGNlMkN3cGJVMlZUQVI4NlVfWkE&output=html"><img class="screenshot" alt="Database screenshot" src="images/database_940px.png" /></a>
+
+                <div class="go-to-database">
+						<p><a class="link-button" target="_blank" href="https://docs.google.com/spreadsheets/d/1tREnZUtwMwLsJ4r-qsjqee54-Fr9KoqUNokbjcuaN10/edit?usp=sharing">See the database</a></p>
+				</div><!--.go-to-database-->
+
+                <p>The textbook database is published under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share-Alike 4.0 License</a>. <a href="#contact">Contact us</a> to contribute, to get a copy of the database, or to purchase a license exception for proprietary use.</p>
+                
+            </div><!--#textbook-database-->
+							
+			<div class="clear-floats"></div>
+            
+			<div id="contact">
+				<h2>Contact</h2>
+				<p>The textbook database is coordinated by <a href="http://electricbookworks.com">Electric Book Works</a> as a social-impact initiative. We need volunteers and partner organisations to help us keep it up to date – please get in touch if you'd like to contribute.</p>
+				<p>Mail <a href="mailto:info@electricbookworks.com">info@electricbookworks.com</a>.</p>
+			</div><!--#contact-->
+			
+		</div><!--.content-->
+
+	</div><!--#wrapper-->
+
+</body>
+</html>

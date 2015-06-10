@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+/* This stylesheet creates a full-width, two-colour-band page with a large headline, paragraphs of text, and a footer for fineprint. */
+
+/* -------------- BODY */
+
+body {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 1.2em;
+	margin: 0;
+	padding: 0;
+	background: #FFF; /* Best to use the same colour as #footer */
+	color: #333;
+	line-height: 140%;
+}
+
+/* -------------- STRUCTURE */
+
+#wrapper {
+	margin: 0 auto;
+}
+
+#header {
+	width: 960px;
+	margin: auto;
+}
+
+.content {
+	padding: 1em;
+	background: #FFF;
+	width: 960px;
+	margin: auto;
+}
+
+.video-slide {
+	border: 1px solid gainsboro;
+	padding: 0.5em;
+}
+
+#menu {
+	margin: 0 0 2em 0;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 1em 0 0 0;
+}
+
+#menu ul li, .role-chooser ul li {
+	display: inline; /* Shows each item side-by-side */
+	list-style-type: none; /* Gets rid of the bullet points */
+}
+
+#menu ul li a.link-button, .role-chooser ul li a.showLink {
+	display: inline;
+}
+
+#textbook-database, #supporters, #contact {
+	clear: both;
+	margin: 2em 0 3em 0;
+	padding: 0 0 2em 0;
+}
+
+.role-chooser {
+	padding: 0.5em 0;
+}
+
+.role-chooser ul {
+	margin: 0 0 1em 0;
+	padding: 0;
+}
+
+.role-select {
+	display: inline;
+}
+
+.supporter-logos {
+	margin: 2em 0 2em 0;
+}
+
+.supporter-logo {
+	display: block;
+	float: left;
+	width: 100px;
+	padding: 1em;
+	margin-right: 1em;
+	border: 1px solid white;
+}
+
+.supporter-logo:hover {
+	background-color: gainsboro;
+	border: 1px solid silver;
+	border-radius: 0.25em; 
+}
+
+.clear-floats {
+	clear: both;
+}
+
+#contact {
+	border-top: 1px solid gainsboro;
+	padding: 2em 0 0 0;
+}
+
+/* -------------- TEXT ELEMENTS */
+
+h1, h2, h3, h3, h4, h5, h6 {
+	clear: both;
+	color: #666;
+	line-height: 90%;
+}
+p {
+	max-width: 720px;
+}
+a img { 
+	border: none;
+}
+a:link {
+	color:#69C;
+	text-decoration: none;
+}
+a:visited {
+	color: #669;
+	text-decoration: none;
+}
+a:hover, a:active, a:focus {
+	text-decoration: underline;
+}
+
+a.link-button {
+	font-family: "Source Sans Pro", sans-serif;
+	display: block; 
+	background-color: silver; 
+	border: 1px solid gainsboro; 
+	border-radius: 0.25em; 
+	width: 10em; 
+	padding: 0.5em; 
+	text-align: center; 
+	text-decoration: none; 
+	color: white; 
+	font-weight: bold;
+	/*margin: 1em 1em 1em 0;*/
+}
+
+a.link-button:hover {
+	background-color: grey;
+}
+
+a.link-button-site-name {
+	background-color: white;
+	color: #69C;
+	margin-right: 1.5em;
+}
+
+a.link-button-site-name:hover {
+	background-color: grey;
+	color: white;
+}
+
+a.link-button-light {
+	background-color: white;
+	color: grey;
+}
+
+a.link-button-light:hover {
+	background-color: gainsboro;
+	color: white;
+}
+
+/* -------------- SHOW/HIDE script */
+
+.more {
+	display: none;
+	border: 1px solid gainsboro;
+	padding: 0.5em;
+	margin: 0 0 1em 0;
+}
+
+/* -------------- IMAGES */
+
+.screenshot {
+	padding: 8px;
+	border: 1px solid gainsboro;
+}
