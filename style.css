@@ -18,24 +18,20 @@ body {
 
 #wrapper {
 	margin: 0 auto;
+	max-width: 960px;
 }
 
 #header {
-	width: 960px;
 	margin: auto;
 }
 
 .content {
 	padding: 1em;
 	background: #FFF;
-	width: 960px;
 	margin: auto;
 }
 
-.video-slide {
-	border: 1px solid gainsboro;
-	padding: 0.5em;
-}
+/* -------------- NAVIGATION */
 
 #menu {
 	margin: 0 0 2em 0;
@@ -47,12 +43,86 @@ body {
 }
 
 #menu ul li, .role-chooser ul li {
-	display: inline; /* Shows each item side-by-side */
+	display: inline-block; /* Shows each item side-by-side */
 	list-style-type: none; /* Gets rid of the bullet points */
+	margin-bottom: 0.5em;
 }
 
 #menu ul li a.link-button, .role-chooser ul li a.showLink {
-	display: inline;
+	display: inline-block;
+}
+
+/* -------------- BASIC TYPOGRAPHY */
+
+h1, h2, h3, h3, h4, h5, h6 {
+	clear: both;
+	color: #666;
+	line-height: 90%;
+}
+p, ul, ol {
+	max-width: 38em;
+}
+a img { 
+	border: none;
+}
+a:link {
+	color:#69C;
+	text-decoration: none;
+}
+a:visited {
+	color: #669;
+	text-decoration: none;
+}
+a:hover, a:active, a:focus {
+	text-decoration: underline;
+}
+
+/* -------------- BUTTONS */
+
+a.link-button {
+	font-family: "Source Sans Pro", sans-serif;
+	display: inline-block; 
+	background-color: silver; 
+	border: 1px solid gainsboro; 
+	border-radius: 0.25em; 
+	padding: 0.3em 0.4em; 
+	text-align: center; 
+	text-decoration: none; 
+	color: white; 
+	font-weight: bold;
+	margin: 0 0.3em 0 0;
+}
+
+a.link-button:hover {
+	background-color: grey;
+}
+
+a.link-button-site-name {
+	background-color: white;
+	color: #69C;
+	margin-right: 1em;
+}
+
+a.link-button-site-name:hover {
+	background-color: grey;
+	color: white;
+}
+
+a.link-button-light {
+	background-color: white;
+	color: grey;
+}
+
+a.link-button-light:hover {
+	background-color: gainsboro;
+	color: white;
+}
+
+/* -------------- SPECIAL TYPOGRAPHY */
+
+.slide {
+	border: 1px solid gainsboro;
+	padding: 0.2em;
 }
 
 #textbook-database, #supporters, #contact {
@@ -68,6 +138,7 @@ body {
 .role-chooser ul {
 	margin: 0 0 1em 0;
 	padding: 0;
+	max-width: 100%;
 }
 
 .role-select {
@@ -102,83 +173,17 @@ body {
 	padding: 2em 0 0 0;
 }
 
-/* -------------- TEXT ELEMENTS */
+/* -------------- IMAGES */
 
-h1, h2, h3, h3, h4, h5, h6 {
-	clear: both;
-	color: #666;
-	line-height: 90%;
-}
-p {
-	max-width: 720px;
-}
-a img { 
-	border: none;
-}
-a:link {
-	color:#69C;
-	text-decoration: none;
-}
-a:visited {
-	color: #669;
-	text-decoration: none;
-}
-a:hover, a:active, a:focus {
-	text-decoration: underline;
+img {
+	max-width: 100%;
 }
 
-a.link-button {
-	font-family: "Source Sans Pro", sans-serif;
-	display: block; 
-	background-color: silver; 
-	border: 1px solid gainsboro; 
-	border-radius: 0.25em; 
-	width: 10em; 
-	padding: 0.5em; 
-	text-align: center; 
-	text-decoration: none; 
-	color: white; 
-	font-weight: bold;
-	/*margin: 1em 1em 1em 0;*/
-}
-
-a.link-button:hover {
-	background-color: grey;
-}
-
-a.link-button-site-name {
-	background-color: white;
-	color: #69C;
-	margin-right: 1.5em;
-}
-
-a.link-button-site-name:hover {
-	background-color: grey;
-	color: white;
-}
-
-a.link-button-light {
-	background-color: white;
-	color: grey;
-}
-
-a.link-button-light:hover {
-	background-color: gainsboro;
-	color: white;
-}
-
-/* -------------- SHOW/HIDE script */
+/* -------------- SHOW/HIDE SCRIPT */
 
 .more {
 	display: none;
 	border: 1px solid gainsboro;
 	padding: 0.5em;
 	margin: 0 0 1em 0;
-}
-
-/* -------------- IMAGES */
-
-.screenshot {
-	padding: 8px;
-	border: 1px solid gainsboro;
 }
